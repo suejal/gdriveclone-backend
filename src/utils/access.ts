@@ -44,4 +44,3 @@ export const getFolderWithAccess = async (userId: string, folderId: string, acti
     ? (await supabase.from("folders").select("*").eq("id", folderId).single()).data
     : null;
 };
-
